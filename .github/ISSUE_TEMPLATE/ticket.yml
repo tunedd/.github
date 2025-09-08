@@ -5,32 +5,36 @@ projects: ["tunedd-ai/Tunedd"]
 body:
   - type: textarea
     id: summary
+    validations:
+      required: true
     attributes:
       label: Summary
       description: Provide a brief summary of the issue or task.
       placeholder: "Brief overview of the issue or task"
-      required: true
 
   - type: textarea
     id: description
+    validations:
+      required: true
     attributes:
       label: Description
       description: Provide a detailed description of the issue or task.
       placeholder: "Detailed explanation of the issue or task"
-      required: true
 
   - type: textarea
     id: acceptance_criteria
+    validations:
+      required: true
     attributes:
       label: Acceptance criteria
       description: Define the conditions that must be met for this ticket to be considered complete.
       placeholder: "What - Clearly state the feature or functionality.\nConditions: Specify the exact inputs, outputs, or behaviours.\nTestability: Ensure it can be objectively validated.\nFormat: Consider using structured formats like \"Given, When, Then\" for clarity."
-      required: true
 
   - type: textarea
     id: notes
+    validations:
+      required: false
     attributes:
       label: Additional notes
       description: Include any additional information or context relevant to this ticket (optional).
       placeholder: "Any other relevant details"
-      required: false
