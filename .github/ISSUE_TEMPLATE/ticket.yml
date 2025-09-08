@@ -35,5 +35,5 @@ body:
       required: false
     attributes:
       label: Additional notes
-      description: Include any additional information or context relevant to this ticket (optional).
+      description: Include any additional information or context relevant to this ticket.
       placeholder: "Any other relevant details"
