@@ -1,6 +1,5 @@
 name: Ticket
 description: Create a work order for tracking issues or tasks.
-labels: ["chore", "iac", "ci/cd", "bug", "documentation", "enhancement"]
 projects: ["tunedd-ai/Tunedd"]
 body:
   - type: textarea
@@ -15,7 +14,7 @@ body:
   - type: textarea
     id: description
     validations:
-      required: true
+      required: false
     attributes:
       label: Description
       description: Provide a detailed description of the issue or task.
