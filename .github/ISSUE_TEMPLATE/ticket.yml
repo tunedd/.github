@@ -2,14 +2,14 @@ name: Ticket
 description: Create a work order for tracking issues or tasks.
 projects: ["tunedd-ai/Tunedd"]
 body:
-  - type: textarea
+  - type: input
     id: summary
     validations:
       required: true
     attributes:
       label: Summary
-      description: Provide a brief summary of the issue or task.
-      placeholder: "Brief overview of the issue or task"
+      description: Provide a brief summary of the task.
+      placeholder: "Brief overview of the task"
 
   - type: textarea
     id: description
@@ -17,8 +17,8 @@ body:
       required: false
     attributes:
       label: Description
-      description: Provide a detailed description of the issue or task.
-      placeholder: "Detailed explanation of the issue or task"
+      description: Provide a detailed description of the task.
+      placeholder: "Detailed explanation of the task"
 
   - type: textarea
     id: acceptance_criteria
@@ -27,7 +27,7 @@ body:
     attributes:
       label: Acceptance criteria
       description: Define the conditions that must be met for this ticket to be considered complete.
-      placeholder: "What - Clearly state the feature or functionality.\nConditions: Specify the exact inputs, outputs, or behaviours.\nTestability: Ensure it can be objectively validated.\nFormat: Consider using structured formats like \"Given, When, Then\" for clarity."
+      placeholder: "What - Clearly state the feature or functionality.\nConditions - Specify the exact inputs, outputs, or behaviours.\nTestability - Ensure it can be objectively validated.\nFormat - Consider using structured formats like \"Given, When, Then\" for clarity."
 
   - type: textarea
     id: notes
