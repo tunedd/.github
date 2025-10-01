@@ -1,6 +1,6 @@
 name: Ticket
 description: Create a work order for tracking issues or tasks.
-projects: ["tunedd-ai/Tunedd"]
+projects: ["tunedd/Tunedd"]
 body:
   - type: input
     id: summary
