@@ -1,6 +1,6 @@
 name: Bug
 description: Ticket for investigating a bug.
-projects: ["Tunedd"]
+projects: ["tunedd/Tunedd"]
 labels: ["bug"]
 type: "Bug"
 body:
@@ -10,7 +10,7 @@ body:
       required: true
     attributes:
       label: "Severity"
-      description: "How much the bug impact the functionality of the app."
+      description: "Measure of much the bug impacts the functionality of the app"
       options:
         - "Low"
         - "Medium"
@@ -23,7 +23,7 @@ body:
       required: true
     attributes:
       label: "Environment"
-      description: "The environment(s) where the bug occurs."
+      description: "The environment(s) where the bug occurs"
       options:
         - label: "Development"
         - label: "Staging"

@@ -1,6 +1,6 @@
 name: Feature
 description: Ticket for a new feature.
-projects: ["Tunedd"]
+projects: ["tunedd/Tunedd"]
 type: "Feature"
 body:
   - type: textarea
@@ -9,7 +9,7 @@ body:
       required: true
     attributes:
       label: "Description"
-      description: "Detailed description of the task."
+      description: "Detailed description of the task"
 
   - type: markdown
     attributes:
@@ -27,4 +27,4 @@ body:
       required: true
     attributes:
       label: "Acceptance Criteria"
-      description: "The conditions that must be met for this ticket to be considered complete."
+      description: "The conditions that must be met for this ticket to be considered complete"
