@@ -1,6 +1,6 @@
 name: Spike
 description: Ticket for a new feature.
-projects: ["tunedd/Tunedd"]
+projects: ["Tunedd"]
 type: "Spike"
 body:
   - type: input

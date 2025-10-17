@@ -1,6 +1,6 @@
 name: Bug
 description: Ticket for investigating a bug.
-projects: ["tunedd/Tunedd"]
+projects: ["Tunedd"]
 labels: ["bug"]
 type: "Bug"
 body:
@@ -12,10 +12,10 @@ body:
       label: "Severity"
       description: "Select the severity level of the bug."
       options:
-        - "Critical"
-        - "High"
-        - "Medium"
         - "Low"
+        - "Medium"
+        - "High"
+        - "Critical"
 
   - type: checkboxes
     id: environment
@@ -36,7 +36,7 @@ body:
       required: true
     attributes:
       label: "Current behaviour"
-      description: "What is the current behaviour?"
+      description: "What is the current, incorrect behaviour?"
 
   - type: textarea
     id: description-expected-behaviour
@@ -44,7 +44,7 @@ body:
       required: true
     attributes:
       label: "Expected behaviour"
-      description: "What is the expected behaviour?"
+      description: "What is the expected behaviour in a working environment?"
 
   - type: textarea
     id: reproduction-steps
