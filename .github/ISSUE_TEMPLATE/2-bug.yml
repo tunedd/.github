@@ -10,7 +10,7 @@ body:
       required: true
     attributes:
       label: "Severity"
-      description: "Select the severity level of the bug."
+      description: "How much the bug impact the functionality of the app."
       options:
         - "Low"
         - "Medium"
@@ -23,7 +23,7 @@ body:
       required: true
     attributes:
       label: "Environment"
-      description: "Select the environment(s) where the bug occurs."
+      description: "The environment(s) where the bug occurs."
       options:
         - label: "Development"
         - label: "Staging"
@@ -36,7 +36,7 @@ body:
       required: true
     attributes:
       label: "Current behaviour"
-      description: "What is the current, incorrect behaviour?"
+      description: "The current, incorrect behaviour"
 
   - type: textarea
     id: description-expected-behaviour
@@ -44,7 +44,7 @@ body:
       required: true
     attributes:
       label: "Expected behaviour"
-      description: "What is the expected behaviour in a working environment?"
+      description: "The expected behaviour in a working environment"
 
   - type: textarea
     id: reproduction-steps
@@ -52,4 +52,4 @@ body:
       required: true
     attributes:
       label: "Steps to reproduce"
-      description: "What steps should be taken to reproduce the bug?"
+      description: "Step-by-step approach to reproducing the bug"

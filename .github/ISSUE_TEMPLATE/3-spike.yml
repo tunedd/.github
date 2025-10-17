@@ -1,5 +1,5 @@
 name: Spike
-description: Ticket for a new feature.
+description: Ticket for a spike.
 projects: ["Tunedd"]
 type: "Spike"
 body:
@@ -9,7 +9,15 @@ body:
       required: true
     attributes:
       label: Focus
-      description: Provide the main focus or objective of the spike.
+      description: The main focus or objective of the spike.
+
+  - type: input
+    id: timebox
+    validations:
+      required: true
+    attributes:
+      label: Recommended timebox
+      description: "Suggested duration for the spike."
 
   - type: textarea
     id: description
@@ -17,7 +25,8 @@ body:
       required: true
     attributes:
       label: "Description"
-      description: "Provide a detailed description of the spike."
+      description: "Detailed description of the spike."
+      placeholder: "Why do we need to investigate this?\nWhat decision depends on the spike?"
 
   - type: textarea
     id: research_findings
@@ -25,13 +34,15 @@ body:
       required: false
     attributes:
       label: "Research findings"
+      description: "Summary of the research findings relevant to the spike."
 
   - type: textarea
     id: recommendation
     validations:
       required: false
     attributes:
-      label: "Recommendation"
+      label: "Recommendations"
+      description: "Proposed next steps or solutions based on the findings."
 
   - type: textarea
     id: next_steps
@@ -39,3 +50,4 @@ body:
       required: false
     attributes:
       label: "Next steps"
+      description: "Subsequent actions based on the recommendations, if applicable.""

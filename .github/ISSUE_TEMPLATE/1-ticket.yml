@@ -9,7 +9,7 @@ body:
       required: true
     attributes:
       label: "Description"
-      description: "Provide a detailed description of the task."
+      description: "Detailed description of the task."
 
   - type: markdown
     attributes:
@@ -26,5 +26,5 @@ body:
     validations:
       required: true
     attributes:
-      label: "Define the conditions that must be met for this ticket to be considered complete."
-      description: " "
+      label: "Acceptance Criteria"
+      description: "The conditions that must be met for this ticket to be considered complete."
