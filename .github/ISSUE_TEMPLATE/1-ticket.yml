@@ -1,0 +1,29 @@
+name: Feature
+description: Ticket for a new feature.
+projects: ["tunedd/Tunedd"]
+type: "Feature"
+body:
+  - type: textarea
+    id: description
+    validations:
+      required: true
+    attributes:
+      label: "Description"
+      description: "Provide a detailed description of the task."
+
+  - type: markdown
+    attributes:
+      value: |
+        ### Acceptance Criteria
+        Define the conditions that must be met for this ticket to be considered complete.
+        **What** - Clearly state the feature or functionality.
+        **Conditions** - Specify the exact inputs, outputs, or behaviours.
+        **Testability** - Ensure it can be objectively validated.
+        **Format** - Consider using structured formats like "Given, When, Then" for clarity.
+
+  - type: textarea
+    id: acceptance_criteria
+    validations:
+      required: true
+    attributes:
+      label: "Define the conditions that must be met for this ticket to be considered complete."

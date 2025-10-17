@@ -1,0 +1,55 @@
+name: Bug
+description: Ticket for investigating a bug.
+projects: ["tunedd/Tunedd"]
+labels: ["bug"]
+type: "Bug"
+body:
+  - type: dropdown
+    id: severity
+    validations:
+      required: true
+    attributes:
+      label: "Severity"
+      description: "Select the severity level of the bug."
+      options:
+        - "Critical"
+        - "High"
+        - "Medium"
+        - "Low"
+
+  - type: checkboxes
+    id: environment
+    validations:
+      required: true
+    attributes:
+      label: "Environment"
+      description: "Select the environment(s) where the bug occurs."
+      options:
+        - label: "Development"
+        - label: "Staging"
+        - label: "Production"
+        - label: "Infrastructure"
+
+  - type: textarea
+    id: description-current-behaviour
+    validations:
+      required: true
+    attributes:
+      label: "Current behaviour"
+      description: "What is the current behaviour?"
+
+  - type: textarea
+    id: description-expected-behaviour
+    validations:
+      required: true
+    attributes:
+      label: "Expected behaviour"
+      description: "What is the expected behaviour?"
+
+  - type: textarea
+    id: reproduction-steps
+    validations:
+      required: true
+    attributes:
+      label: "Steps to reproduce"
+      description: "What steps should be taken to reproduce the bug?"

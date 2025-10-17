@@ -1,4 +1,4 @@
-name: Ticket
+name: Ticket (Classic)
 description: Create a work order for tracking issues or tasks.
 projects: ["tunedd/Tunedd"]
 body:
